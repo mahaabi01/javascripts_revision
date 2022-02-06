@@ -47,6 +47,6 @@ function addColor() {
 }
 
 lastName.addEventListener("blur", function(){
-    console.log('Blured in last name !');
+    console.log('Blured in last name!');
 });
 
