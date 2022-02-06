@@ -28,16 +28,25 @@ form.addEventListener("submit", function(e){
 */
 //first-name
 const firstName = document.querySelector("#first_name");
-firstName.addEventListener("focus", function(){
-    console.log(123);
-});
+// firstName.addEventListener("focus", function(){
+//     console.log(123);
+// });
+firstName.addEventListener("focus", focusEvtFunct);
+function focusEvtFunct() {
+    firstName.style = 'border: 1px solid pink;';
+    console.log("focused in first name..");
+}
 firstName.addEventListener("blur", function(){
-    console.log('This is blur.');
+    console.log("blured on first name !");
 });
 const lastName = document.querySelector("#last_name");
-lastName.addEventListener("focus", function(){
-    console.log('paisa');
-});
+lastName.addEventListener("focus", addColor);
+function addColor() {
+    lastName.style = 'border: 1px solid pink;';
+    console.log("focused in last name..")
+}
+
 lastName.addEventListener("blur", function(){
-    console.log('sapana');
+    console.log('Blured in last name !');
 });
+
