@@ -1,0 +1,11 @@
+Useful thngs that can be achieve are:
+1. Multiline Strings
+2. Direct variable usage
+3. Easily hookup an expression
+and makes far more easy to read and understand the code 
+
+
+Arrow Functions 
+Also knowns as  Anonymous Functions or lambda function expression
+only different in syntax in compare to normal Functions
+Arrow functions turns out to be very handy when we have to write small piece of code snippets. And, are mislt used in Higher Oeder Functions (HOF)
