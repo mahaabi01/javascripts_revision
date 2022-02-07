@@ -12,6 +12,11 @@ export default function substract(a,b){
     return a-b;
 }
 
+export class Product {
+    getProduct(){
+        console.log("Porduct list");
+    }
+}
 
 
 // export { add, user };
