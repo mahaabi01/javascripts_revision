@@ -8,4 +8,3 @@ function result(sum){
 console.log('Hello 1');
 add(1,2, result);
 console.log('Hello 2');
-
