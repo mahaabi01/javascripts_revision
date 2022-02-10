@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGEX</title>
+</head>
+<body></body>
+<script>
+    var data = "the";
+    // var data = "a aab bcd b aaab cat is a and street stree animal";
+    // var result = data.search(/a/);
+    // var result = data.match(/a+b/g); //quantifier
+    // var result = data.match(/a*b/g); //quantifier
+    // var result = data.match(/stre+t/g);4
+    // var result = data.match(/street?/g);
+    // var result = data.match(/[a-z]{3,5}/g);
+    var result = data.match(/^[a-z]{3}$/g);
+    // + = one or more
+    // * = none or many
+    // ? = optional
+    console.log(result);
+</script>
+</html>
