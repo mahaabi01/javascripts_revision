@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data validation using regex</title>
+    <style>
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="inputField"/>
+        <button onclick="validateData(event)">Check</button>
+    </form>
+    
+</body>
+<script>
+    function validateData(){
+        event.preventDefault();
+        var data = document.getElementById("inputField").value;
+        var result = data.match(/^[0-9]{2,}$/ig); //validate all data more than 2
+        console.log(result);
+    }
+</script>
+</html>
