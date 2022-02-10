@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception handling</title>
+</head>
+<body>
+    <input type="text" id="inputField"> 
+    <button onclick="handleSubmit()">Submit</button>
+    <input type="text" id="voteValidate">
+    <button onclick="validate()">Check</button>
+
+</body>
+<script>
+    function handleSubmit(){
+       
+        var data = document.getElementById("inputField").value;
+        try{
+        if(isNaN(data)){
+            throw "Not a number";
+        }
+        else if (data > 100 ){
+            throw "Number should be less than 100";
+        }
+    }
+    catch (err){
+        console.log(err);
+    }
+}
+function validate(){
+    var age = document.getElementById("voteValidate").value;
+    try{
+        if (age > 18){
+        throw "You can vote."
+    }   
+    else {
+        throw "You cannot vote.";
+    }
+}
+    catch (err){
+        console.log(err);
+    }
+}
+    try {
+    x="Abilash";
+    console.log(error_function());
+    }
+    catch(err){
+        console.log(err.stack);
+    }
+    finally{
+        console.log("Finally block is executed")
+    }
+    console.log("Test function()");
+    console.log(x);
+</script>
+</html>
